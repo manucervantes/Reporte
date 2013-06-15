@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/et_user_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
+
+    <ImageView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_pass_log"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:onClick="login_facebook"
+        android:src="@drawable/login" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_pass_log"
+        android:layout_alignRight="@+id/login"
+        android:layout_marginBottom="32dp"
+        android:text="Password"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_toLeftOf="@+id/login"
+        android:text="User"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/et_pass_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/et_user_log"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/login"
+        android:layout_toLeftOf="@+id/textView1"
+        android:onClick="valida"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/btn_new_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/login"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/login"
+        android:text="Create Acount" />
+
+    <Button
+        android:id="@+id/new_repo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="34dp"
+        android:layout_toLeftOf="@+id/textView1"
+        android:onClick="login_twitter"
+        android:text="twitter" />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="treportes">
+        <item>Bache</item>
+        <item>Fuga</item>
+        <item>Obras</item>
+        <item>otro</item>
+        
+    </string-array>
+    
+</resources>
